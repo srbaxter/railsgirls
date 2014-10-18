@@ -1,4 +1,5 @@
 Twitter::Application.routes.draw do
+  get "pages/info"
   devise_for :users
   root 'tweets#index'
   resources :tweets, only: [:new, :index, :create]
